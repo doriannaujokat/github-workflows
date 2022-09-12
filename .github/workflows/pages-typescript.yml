@@ -39,7 +39,7 @@ jobs:
             !*.ts
             !*.d.ts
             !*.js.map
-          name: github-pages
+          name: github-pages-build
           retention-days: 1
   deploy:
     environment:
@@ -50,7 +50,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@master
         with:
-          name: github-pages
+          name: github-pages-build
           path: '.'
       - name: Setup Pages
         uses: actions/configure-pages@v2
