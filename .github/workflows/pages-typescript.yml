@@ -25,6 +25,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build Typescript
+        continue-on-error: true
         run: |
           npm install -g typescript
           tsc --project pages.tsconfig.json
