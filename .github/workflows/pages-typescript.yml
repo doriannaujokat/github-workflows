@@ -30,7 +30,7 @@ jobs:
           npm install -g typescript
           tsc --project pages.tsconfig.json
       - name: Upload static files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: |
             *
