@@ -34,7 +34,9 @@ jobs:
         with:
           path: |
             *
-            !node_modules/*
+            !.git
+            !.github
+            !node_modules
             !*.env
             !CNAME
             !package.json
